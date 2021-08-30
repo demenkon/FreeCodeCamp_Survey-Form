@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <title>Survey Form</title>
+</head>
+
+<body>
+   <div class="survey">
+      <div class="container">
+         <h1 class="survey__title">Demenko Corporation Survey Form</h1>
+         <p class="survey__text">Thank you for taking the time to help improve our platform.</p>
+
+
+         <form id="survey-form">
+            <div class="form__item">
+               <label id="name-label" name="name">Name</label>
+               <input class="form__setting" name="text" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form__item">
+               <label id="email-label" name="email">Email</label>
+               <input class="form__setting" name="email" id="email" placeholder="Enter your e-mail" required>
+            </div>
+
+            <div class="form__item">
+               <label id="number-label" name="number">Age<span>(optional)</span></label>
+               <input class="form__setting" type="number" name="age" id="number" min="10" max="99" placeholder="Age"
+                  required>
+            </div>
+
+            <div class="form__item">
+               <h1 class="title__input">Which option best describes your current role ?</h1>
+               <select id="dropdown" name="role" class="form__setting" required>
+                  <option disabled selected value>Select role</option>
+                  <option value="student">Student</option>
+                  <option value="job">Full Time Job</option>
+                  <option value="learner">Full Time Learner</option>
+                  <option value="preferNo">Prefer not to say</option>
+                  <option value="other">Other</option>
+               </select>
+            </div>
+
+            <div class="form__item">
+               <h1 class="title__input margin__input">Would you recommend us to your friends ?</h1>
+               <label>
+                  <input name="recommend" value="definitely" type="radio" class="input__radio" checked>Definitely
+               </label>
+               <label>
+                  <input name="recommend" value="definitely" type="radio" class="input__radio" checked>Maybe
+               </label>
+               <label>
+                  <input name="recommend" value="definitely" type="radio" class="input__radio" checked>Not sure
+               </label>
+            </div>
+
+            <div class="form__item">
+               <h1 class="title__input">What would you like to improve ? <span>(select multiple options)</span></h1>
+               <label>
+                  <input name="prefer" value="web-design" type="checkbox" class="input__checkbox">Web Design
+               </label>
+               <label>
+                  <input name="prefer" value="rendering" type="checkbox" class="input__checkbox">3D Rendering
+               </label>
+               <label>
+                  <input name="prefer" value="video-editing" type="checkbox" class="input__checkbox">Video Editing
+                  Software
+               </label>
+               <label>
+                  <input name="prefer" value="front-end" type="checkbox" class="input__checkbox">Front-end
+               </label>
+               <label>
+                  <input name="prefer" value="back-end" type="checkbox" class="input__checkbox">Back-end
+               </label>
+               <label>
+                  <input name="prefer" value="game-development" type="checkbox" class="input__checkbox">Game Development
+               </label>
+               <label>
+                  <input name="prefer" value="server-partd" type="checkbox" class="input__checkbox">Server Part
+               </label>
+            </div>
+
+            <div class="form__item">
+               <h1 class="title__input">If you still have questions, write in the field below :</h1>
+               <textarea id="questions" name="comment" class="input__textarea"
+                  placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <button id="submit" type="submit" class="btn">Submit</button>
+         </form>
+      </div>
+   </div>
+</body>
+
+</html>
